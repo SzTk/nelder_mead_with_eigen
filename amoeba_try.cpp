@@ -72,7 +72,7 @@ int main() {
   psum = p.colwise().sum();
   std::cout << "p:\n" << p << std::endl;
 
-  for (int i = 0; i < NMAX; i++) {
+  for (int k = 0; k < NMAX; k++) {
     // compute best,worst and next worst point.
     ilo = 0;
     ihi = y(0) > y(1) ? (inhi = 1, 0) : (inhi = 0, 1);
